@@ -52,7 +52,7 @@ function insert_token($password,$token){
   {
     $this->db->set('token', $token);
     $this->db->where('password', $password);
-    $this->db->update('challenge');
+    $this->db->update('challenge1');
 
     return true;
   }
